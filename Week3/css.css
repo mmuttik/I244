@@ -1,0 +1,9 @@
+.tekst {
+  style="width: 500px;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  border: 1px solid green;
+}
+body {
+  background-color: yellow;
+}
