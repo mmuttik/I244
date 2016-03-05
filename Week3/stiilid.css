@@ -1,0 +1,31 @@
+.ihave{
+  color: green;
+}
+.ihave2{
+  text-decoration: underline;
+}
+.ihave3{
+  background-color: #8FBC8F;
+}
+.ihave4{
+  font-size: 200%;
+}
+#ihave5{
+  font-family: monospace;
+}
+#ihave6{
+  background-color: yellow;
+  border: 10px solid black;
+}
+#ihave7{
+  border: 10px dashed black;
+  border-radius: 5px;
+  background-color: yellow;
+}
+#ihave8{
+  text-align: center;
+  font-style: italic;
+}
+.ihave9: hover{
+  cursor: crosshair;
+}
