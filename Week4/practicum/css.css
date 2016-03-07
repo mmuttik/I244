@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Sans-Serif;
+}
+
+@media (max-width: 400px) {
+  body{
+    background: yellow;
+    color: blue;
+    padding-top: 200px;
+
+  }
+}
+
+.menyy {
+    margin-bottom: 20px;
+    position: fixed; /* Fikseerib alla scrollides menüü (jääb näha) */
+}
+
+.menyy ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Elemendid kõrvuti kastides */
+    flex-wrap: wrap; /* Kui lk-d kokku pressida, siis paigutab kastid üksteise alla */
+}
+
+.menyy li {
+    padding: 5px 15px;
+    width: 8em;
+    background-color: #EEEEEE;
+    /* flex-grow: 1; Kastid lk laiuses */
+}
+
+.menyy a {
+    text-decoration: none;
+    color: blue;
+}
+
+.menyy a:hover {
+    text-decoration: underline;
+}
+
+.menyy li.valitud {
+    background: blue;
+}
+
+.menyy li.valitud a {
+    color: white;
+}
+
+.tabel {
+    border-spacing: 0;
+}
+
+.tabel caption {
+    font-size: 160%;
+}
+
+.tabel td, .tabel th {
+    border-top: 1px solid #AAAAAA;
+    padding: 5px 10px;
+}
+
+input[type="text"], input[type="password"] {
+    font-family: Arial, Sans-Serif;
+    font-size: 15px;
+    padding: 5px 10px;
+    width: 16em;
+    border: 1px dashed #AAAAAA;
+    border-radius: 3px;
+}
+
+.footer{
+  position: static;
+  left:100px;
+  top: 100px;
+  border: 1px solid black;
+}
