@@ -11,32 +11,7 @@
 
     </style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('li:first').addClass('active');
-
-        $('#next').bind("click", function () {
-          var active = $('.active');
-          var isActivated;
-          active.is(":last-child")
-            ? isActivated = $('li').first()
-            : isActivated = $(active).next();
-          $('li').removeClass('active');
-          $(isActivated).addClass('active');
-        });
-
-        $('#prev').bind("click", function () {
-          var active = $('.active');
-          var isActivated;
-          active.is(":first-child")
-            ? isActivated = $('li').last()
-            : isActivated = $(active).prev();
-          $('li').removeClass('active');
-          $(isActivated).addClass('active');
-        });
-
-      })
-    </script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <button id="next">edasi</button>
