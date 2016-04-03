@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My famous f1 drivers</title>
+    <style> /*TODO
+        div{
+        }
+        p{
+        }
+        */
+     </style>
+</head>
+<body>
+
+    <?php
+    foreach($drivers as $id => $driver){
+    echo "<div>";
+    echo "<p>";
+    echo "{$driver['name']} is driving for {$driver['team']} team. His biggest dream is to {$driver['dream']}, but {$driver['actual']}";
+    }
+    ?>
+
+</body>
+</html>
