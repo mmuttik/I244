@@ -4,6 +4,40 @@
     <head>
         <title></title>
 <style type='text/css'>
+<p>Leht on olnud avatud:</p>
+		<label id="minutes">00</label>:<label id="seconds">00</label>
+		    <script type="text/javascript">
+		        var minutesLabel = document.getElementById("minutes");
+		        var secondsLabel = document.getElementById("seconds");
+		        var totalSeconds = 0;
+		        setInterval(setTime, 1000);
+
+		        function setTime()
+		        {
+		            ++totalSeconds;
+		            secondsLabel.innerHTML = pad(totalSeconds%60);
+		            minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+		        }
+
+		        function pad(val)
+		        {
+		            var valString = val + "";
+		            if(valString.length < 2)
+		            {
+		                return "0" + valString;
+		            }
+		            else
+		            {
+		                return valString;
+		            }
+		        }
+		    </script>
+
+
+		<!--console.log("Kirjutame midagi JS konsooli")
+		alert("Kole aken")-->
+
+		<p>
 body {
     font-family: monospace;
     padding: 10px;
@@ -57,6 +91,20 @@ li {
 
     </head>
     <body>
+
+      <?php
+          $host = "localhost";
+          $user = "test";
+          $pass = "t3st3r123";
+          $db = "test";
+          $ip = $_SERVER['REMOTE_ADDR'];
+
+          $l = mysqli_connect($host, $user, $pass, $db);
+          mysqli_query($l, "SET CHARACTER SET UTF8") or
+          die("Error, ei saa andmebaasi charsetti seatud");
+
+          mysqli_close($l);
+      ?>
         <table class='recipe'>
             <caption>
                 Spicy Thai Peanut Sauce
